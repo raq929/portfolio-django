@@ -1,8 +1,23 @@
 {% extends "base.html" %}
-{% block body %}
-	{% block main%}
- 	<h1>{{ page.title }}</h1>
- 	<p>This is the homepage</p>
-	{% endblock %}
+{% load static %}
+
+{% block page_title %}
+{% endblock page_title %}
+
+{% block main%}
+	<div id="index-banner" class="parallax-container">
+		<div class="section no-pad-bot">
+			<div class="container">
+				<div class="col s12 m6">
+					
+				</div>
+      	<div class="col s12 m6">
+      		
+      	</div>
+			</div>
+		</div>
+		<div class="parallax"><img src="{% static 'images/green.jpg' %}" alt="Rider on horseback entering a green forest"></div>
+	</div>
 {% endblock %}
+
 
